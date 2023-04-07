@@ -54,6 +54,7 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 70px;
+    text-align: left;
 }
 
 .faqContainer {
