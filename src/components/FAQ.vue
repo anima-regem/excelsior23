@@ -122,7 +122,7 @@
         margin: 0 auto;
     }
 
-    .headerBack {}
+    /* .headerBack {} */
 
     .headerText {
         position: absolute;
@@ -180,4 +180,5 @@
         border-right: none;
         padding-right: 0;
     }
-}</style>
+}
+</style>
