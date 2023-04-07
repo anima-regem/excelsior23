@@ -31,13 +31,13 @@
       <h4 class="footer__heading">CONTACT US</h4>
       <ul class="footer__link__container">
         <li>
-          <a class="footer__link" href="tel:+919495951143">
-            Sanju: +91 9495951143
+          <a class="footer__link" href="wa.me/+919746180704">
+            Pavan: +91 9746180704
           </a>
         </li>
         <li>
-          <a class="footer__link" href="tel:+919895645290">
-            Thamanna: +91 9895645290
+          <a class="footer__link" href="wa.me/+916282788987">
+            Lakshmi: +91 6282788987
           </a>
         </li>
         <li>
@@ -59,7 +59,7 @@
       </p>
     </section>
     <section class="section footer__end">
-      <p>Copyright &copy; 2022 IEEE SB GECPKD. All Rights Reserved</p>
+      <p>Copyright &copy; 2023 IEEE SB GECPKD. All Rights Reserved</p>
       <div class="footer__socials">
         <a href="https://www.instagram.com/ieeesbgecpkd/" target="_blank">
           <!-- <img :src="instagramLogo" alt="instagram_logo" /> -->
