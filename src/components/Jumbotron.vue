@@ -4,23 +4,21 @@ import logo from "../assets/images/logo.png"
 </script>
 
 <template>
-    <div class="jumbatron">
+    <section class="jumbatron">
         <img class="logo" :src="logo" alt="logo">
         <div class="content">
             <div class="date">
                 <h2>28, 29, 30 April</h2>
             </div>
-            <div class="facemask"><img :src="facemask" alt="mask"></div>
+            <div class="facemask">
+                <img :src="facemask" alt="mask">
+            </div>
         </div>
-    </div>
+    </section>
 </template>
 
 
 <style scoped>
-nav {
-    height: 4rem;
-}
-
 .jumbatron {
     position: relative;
     background-image: url("/background_spotted.png");
@@ -47,7 +45,7 @@ nav {
 }
 
 .date h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .facemask img {
@@ -77,6 +75,7 @@ nav {
         padding-bottom: 2rem;
     }
 
+
     .date h2 {
         font-size: 1.5rem;
     }
@@ -85,5 +84,39 @@ nav {
         transform: translateX(-5%);
     }
 
+}
+
+@media screen and (max-width: 450px) {
+    .content {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .date {
+        grid-column: 1/3;
+    }
+
+    .date h2 {
+        font-size: 1.25rem;
+    }
+
+    .facemask img {
+        width: 150%;
+        transform: translateX(-30%);
+    }
+
+    .logo {
+        width: 50%;
+        left: 13%;
+        top: 5%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .content {
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
 }
 </style>
