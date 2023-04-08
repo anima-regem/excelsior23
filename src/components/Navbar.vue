@@ -59,6 +59,7 @@ nav ul li {
     margin-left: 5px;
 }
 
+
 nav ul li a {
     color: white;
     font-size: 17px;
@@ -96,7 +97,9 @@ nav ul li a {
     .checkbtn {
         display: block;
     }
-
+    img{
+    width: 50vw;
+}
     ul {
         position: fixed;
         width: 100%;
