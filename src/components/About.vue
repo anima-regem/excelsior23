@@ -6,7 +6,7 @@
     <main>
         <div class="left">
             <div class="excelsior_name">EXCELSIOR'23</div>
-            <div class="excelsior_bg"></div>
+            <!-- <img src="../assets/excelsior_bg.svg" class="excelsior_bg"/> -->
         </div>
 
         <div class="right">
@@ -27,44 +27,67 @@
 </template>
 
 <style scoped>
-    main {
-        height: 100%;
-        width: 100%;
-    }
+main {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 
-    .left {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 50%;
-        float: left;
-    }
+/* .excelsior_bg {
+  width: 100%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  z-index: -1;
+} */
 
-    .excelsior_name {
-        font-size: 5rem;
-        font-weight: 700;
-        color: #f5f5f5;
-        padding: 10%;
-    }
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    float: left;
+}
 
-    .excelsior_bg {
-        position: absolute;
-        background-image: url("../assets/excelsior_bg.svg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
+.excelsior_name {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #f5f5f5;
+    padding: 10%;
+    padding-top: 20%;
+}
 
-    .right {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-        float: right;
-    }
+.excelsior_name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('../assets/excelsior_bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+
+.right {
+    padding-top: 12.5%;
+    padding-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: right;
+}
+
+.tagline {
+    font-size: 2rem;
+    letter-spacing: 1rem;
+    font-weight: 500;
+    padding-bottom: 5%;
+}
 </style>

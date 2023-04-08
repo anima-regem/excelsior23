@@ -4,8 +4,6 @@ import logo from "../assets/images/logo.png"
 </script>
 
 <template>
-    <!-- Remove after completing navbar (For temporary purpose) -->
-    <nav>NAVBAR</nav>
     <div class="jumbatron">
         <img class="logo" :src="logo" alt="logo">
         <div class="content">

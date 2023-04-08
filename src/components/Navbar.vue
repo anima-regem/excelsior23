@@ -20,7 +20,7 @@
 </template>
 
 
-<style lang="scss" scoped>
+<style scoped>
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -68,11 +68,11 @@ nav ul li a {
     border-radius: 3px;
 }
 
-// a.active,
+/* // a.active,
 // a:hover {
 //     background-color: #1b9bff;
 //     transition: 0.5s;
-// }
+// } */
 
 .checkbtn {
     font-size: 30px;
