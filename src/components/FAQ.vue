@@ -37,9 +37,7 @@
 
 <style scoped>
 
-*{
-    padding: 1%;
-}
+
 .container {
     margin: 8rem auto 0 auto;
 }
@@ -62,7 +60,8 @@
 }
 
 .faqContainer {
-    margin: 8rem 8rem;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -86,7 +85,7 @@
 .faqHead {
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    font-size: 35px;
+    font-size: 2vw;
     font-weight: 600;
     line-height: 40px;
 }
@@ -167,7 +166,7 @@
     .faqHead {
         color: #fff;
         font-family: 'Poppins', sans-serif;
-        font-size: 30px;
+        font-size: 3vw;
         height: auto;
         font-weight: 600;
         line-height: 34px;
