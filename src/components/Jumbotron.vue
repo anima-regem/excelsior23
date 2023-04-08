@@ -23,6 +23,7 @@ import logo from "../assets/images/logo.png"
     position: relative;
     background-image: url("/background_spotted.png");
     background-size: contain;
+    overflow: hidden;
 }
 
 .logo {
