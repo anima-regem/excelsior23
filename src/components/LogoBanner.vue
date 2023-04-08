@@ -54,18 +54,22 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 .logos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 1.25rem 2rem;
     flex-wrap: wrap;
     margin: 1rem 2rem;
 }
 
 .logos img {
-    width: 13%;
+    width: 9%;
 }
 
 .logos img[alt="WIELogo"] {
-    width: 11%;
+    width: 8%;
+}
+
+.logos img[alt="IEEELogo"] {
+    width: 15%;
 }
 
 @media screen and (max-width:732px) {

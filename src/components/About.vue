@@ -25,21 +25,13 @@
         </div>
     </main>
 </template>
-
 <style scoped>
 main {
     position: relative;
     height: 100vh;
     width: 100%;
+    overflow-x: hidden;
 }
-
-/* .excelsior_bg {
-  width: 100%;
-  position: absolute;
-  top: -10%;
-  left: -10%;
-  z-index: -1;
-} */
 
 .left {
     display: flex;
@@ -51,7 +43,7 @@ main {
 }
 
 .excelsior_name {
-    font-size: 5rem;
+    font-size: 5vw;
     font-weight: 700;
     color: #f5f5f5;
     padding: 10%;
@@ -69,13 +61,11 @@ main {
     background-image: url('../assets/excelsior_bg.svg');
     background-size: contain;
     background-repeat: no-repeat;
-
 }
-
 
 .right {
     padding-top: 12.5%;
-    padding-bottom: 8%;
+    padding: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,10 +74,22 @@ main {
     float: right;
 }
 
+.more_info{
+}
 .tagline {
-    font-size: 2rem;
+    font-size: 2vw;
     letter-spacing: 1rem;
     font-weight: 500;
     padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+  .left, .right {
+    width: 100%;
+    float: none;
+  }
+  .left {
+    order: 2;
+  }
 }
 </style>
