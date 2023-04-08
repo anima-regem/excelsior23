@@ -21,9 +21,7 @@
 
 
 <style scoped>
-body {
-    font-family: 'Montserrat', sans-serif;
-}
+
 
 * {
     padding: 0;
@@ -39,6 +37,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index:10;
 }
 
 label.logo {
@@ -67,12 +66,6 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
 }
-
-/* // a.active,
-// a:hover {
-//     background-color: #1b9bff;
-//     transition: 0.5s;
-// } */
 
 .checkbtn {
     font-size: 30px;

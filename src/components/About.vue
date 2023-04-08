@@ -65,7 +65,7 @@ main {
 
 .right {
     padding-top: 12.5%;
-    padding: 8%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,11 +74,15 @@ main {
     float: right;
 }
 
-.more_info{
+.more_info {
+  white-space: normal;
+  padding: 10%;
 }
+
 .tagline {
     font-size: 2vw;
     letter-spacing: 1rem;
+    white-space: nowrap;
     font-weight: 500;
     padding-bottom: 5%;
 }
@@ -87,9 +91,18 @@ main {
   .left, .right {
     width: 100%;
     float: none;
+    /* word-wrap: normal; */
   }
   .left {
     order: 2;
   }
+  .tagline {
+    font-size: 3vw;
+    letter-spacing: 2vw;
+    white-space: nowrap;
+    font-weight: 500;
+    padding-bottom: 5%;
+}
+
 }
 </style>

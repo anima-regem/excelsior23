@@ -117,20 +117,24 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         width: 97%;
         height: 100%;
         margin: 0 auto;
+        text-align: left;
+
     }
 
     /* .headerBack {} */
 
     .headerText {
         position: absolute;
-        margin: 1.8rem 0 0 0;
+        margin: 1.8rem 0.5rem 0 0.8rem;
         color: white;
-        font-size: 60px;
+        font-size: 10vw;
         font-family: 'Poppins', sans-serif;
+
+        text-align: left;
     }
 
     .faqContainer {
