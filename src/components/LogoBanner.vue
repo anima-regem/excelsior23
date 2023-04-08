@@ -62,14 +62,17 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 
 .logos img {
     width: 9%;
+    min-width: 60px;
 }
 
 .logos img[alt="WIELogo"] {
+    min-width: 40px;
     width: 8%;
 }
 
 .logos img[alt="IEEELogo"] {
     width: 15%;
+    min-width: 90px;
 }
 
 @media screen and (max-width:732px) {
@@ -90,9 +93,6 @@ import comsocLogo from '../assets/images/comsocLogo.png';
         margin: 0.5rem 1rem;
     }
 
-    .logos img {
-        width: 16%;
-    }
 }
 
 @media screen and (max-width:420px) {
@@ -101,5 +101,6 @@ import comsocLogo from '../assets/images/comsocLogo.png';
         margin: 0.35rem 1rem;
         gap: 0.5rem 2rem;
     }
+
 }
 </style>

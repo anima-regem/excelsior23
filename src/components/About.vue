@@ -30,7 +30,7 @@ main {
     position: relative;
     height: 100vh;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .left {

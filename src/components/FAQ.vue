@@ -36,6 +36,10 @@
 </template>
 
 <style scoped>
+
+*{
+    padding: 1%;
+}
 .container {
     margin: 8rem auto 0 auto;
 }
@@ -49,7 +53,7 @@
 }
 
 .headerText {
-    margin: -4.8rem 0 0 4rem;
+    padding: 5%;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
@@ -69,12 +73,14 @@
     margin-top: 0rem;
     align-self: start;
     width: 45%;
+   
 }
 
 .faqRight {
     margin-top: 4rem;
     align-self: flex-end;
     width: 45%;
+    
 }
 
 .faqHead {
@@ -107,9 +113,10 @@
 
 @media only screen and (max-width: 768px) {
     .container {
+        padding: 0%;
         padding-top: 10rem;
         margin: 0 auto 0 0;
-        width: 100vw;
+        width: 100%;
     }
 
     .headerContainer {
@@ -131,7 +138,7 @@
         position: absolute;
         margin: 1.8rem 0.5rem 0 0.8rem;
         color: white;
-        font-size: 10vw;
+        font-size: 5vw;
         font-family: 'Poppins', sans-serif;
 
         text-align: left;
