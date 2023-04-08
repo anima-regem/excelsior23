@@ -78,9 +78,9 @@ import comsocLogo from '../assets/images/comsocLogo.png';
         margin: 0.5rem 2rem;
     }
 
-    .logos img {
-        width: 20%;
-    }
+    /* .logos img {
+        width: 10%;
+    } */
 }
 
 
