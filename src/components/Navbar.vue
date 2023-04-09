@@ -1,11 +1,13 @@
 <script setup>
-
+import { ref } from 'vue';
+let menuOpen = ref(false)
 </script>
 
 
 <template>
-    <nav>
-        <input type="checkbox" name="" id="check" />
+    <div :style="menuOpen ? 'display: block;' : ''" class="margin"></div>
+    <nav :style="menuOpen ? 'position: fixed;top: 0;' : ''">
+        <input v-model="menuOpen" type="checkbox" name="" id="check" />
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
@@ -15,19 +17,23 @@
             <li><a href="#">Sponsors</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        
+
     </nav>
 </template>
 
 
 <style scoped>
-
-
 * {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
+}
+
+.margin {
+    height: 80px;
+    width: 100%;
+    display: none;
 }
 
 nav {
@@ -37,7 +43,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index:10;
+    z-index: 10;
 }
 
 label.logo {
@@ -97,9 +103,11 @@ nav ul li a {
     .checkbtn {
         display: block;
     }
-    img{
-    width: 50vw;
-}
+
+    img {
+        width: 50vw;
+    }
+
     ul {
         position: fixed;
         width: 100%;
@@ -107,6 +115,7 @@ nav ul li a {
         background-color: #2c3e50;
         top: 80px;
         left: -100%;
+        z-index: 100;
         text-align: center;
         transition: all 0.5s;
     }
