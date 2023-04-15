@@ -2,6 +2,9 @@
 
 </script>
 
+
+
+
 <template>
     <main>
         <div class="left">
@@ -24,6 +27,7 @@
         </div>
     </main>
 </template>
+
 <style scoped>
 main{
     position: relative;
