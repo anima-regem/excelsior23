@@ -113,7 +113,7 @@
     }
 
     .headerContainer {
-        z-index: 98;
+        /* z-index: 98; */
         display: flex;
         flex-direction: column;
         justify-content: center;
