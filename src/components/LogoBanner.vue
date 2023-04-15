@@ -22,6 +22,7 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 </script>
 
 <style scoped>
+
 .logo-container {
     background-color: hsla(0, 0%, 16%, 1);
     padding: 1rem 0;
@@ -34,22 +35,6 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 
 }
 
-.cloud {
-    --height: 400px;
-    --blur: 150px;
-    position: absolute;
-    top: calc(-1 * (var(--height) - 100%) / 2);
-    left: 15%;
-    z-index: -2;
-    background-image: linear-gradient(180deg, rgba(7, 55, 195, 0.4) 0%, rgba(20, 245, 127, 0.4) 100%);
-    height: var(--height);
-    width: 250px;
-    -webkit-filter: blur(var(--blur));
-    -moz-filter: blur(var(--blur));
-    -o-filter: blur(var(--blur));
-    -ms-filter: blur(var(--blur));
-    filter: blur(var(--blur));
-}
 
 .logos {
     display: flex;

@@ -37,7 +37,8 @@ let menuOpen = ref(false)
 }
 
 nav {
-    background-color: #191928;
+    background-color: #191C29;
+
     width: 100%;
     height: 80px;
     display: flex;
@@ -54,19 +55,18 @@ label.logo {
     padding-left: 100px;
 }
 
-nav ul {
+ul {
     float: right;
     margin-right: 20px;
 }
 
-nav ul li {
+ul li {
     display: inline-block;
     line-height: 80px;
     margin-left: 5px;
 }
 
-
-nav ul li a {
+ul li a {
     color: white;
     font-size: 17px;
     text-transform: uppercase;
@@ -89,12 +89,12 @@ nav ul li a {
 }
 
 @media (max-width: 952px) {
-    label.logo {
+    .logo {
         font-size: 30px;
         padding-left: 50px;
     }
 
-    nav ul li a {
+    ul li a {
         font-size: 16px;
     }
 }
@@ -120,24 +120,19 @@ nav ul li a {
         transition: all 0.5s;
     }
 
-    nav ul li {
+    .active {
+        left: 0;
+    }
+
+    ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    nav ul li a {
+    ul li a {
         font-size: 20px;
-    }
-
-    a:hover,
-    a.active {
-        background: none;
-        color: #0082e6;
-    }
-
-    #check:checked~ul {
-        left: 0;
     }
 }
 </style>
+  
