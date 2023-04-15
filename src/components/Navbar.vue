@@ -38,6 +38,7 @@ let menuOpen = ref(false)
 
 nav {
     background-color: #191C29;
+
     width: 100%;
     height: 80px;
     display: flex;
@@ -111,7 +112,7 @@ ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #2c3e50;
+        background-color: #303545;
         top: 80px;
         left: -100%;
         z-index: 100;
