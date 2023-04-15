@@ -39,12 +39,18 @@ import speakerdata from '../assets/data/speakers.json'
 }
 
 @media(max-width:430px) {
+    .container{
+        padding: 0 5%;
+    }
     .container>h1 {
         font-size: 40px;
         letter-spacing: 0.01em;
     }
+
     .speaker_section {
         margin-top: 25px;
+        justify-content: space-evenly;
+        gap: 20px;
     }
 }
 </style>
