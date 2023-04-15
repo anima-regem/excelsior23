@@ -112,7 +112,7 @@ nav ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #2c3e50;
+        background-color: #303545;
         top: 80px;
         left: -100%;
         z-index: 100;
