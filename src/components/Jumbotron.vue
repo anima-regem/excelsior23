@@ -38,6 +38,16 @@ import logo from "../assets/images/logo.png"
     overflow: hidden;
 }
 
+.jumbatron::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 16%, 0.4);
+}
+
 .logo {
     position: absolute;
     width: 61%;
