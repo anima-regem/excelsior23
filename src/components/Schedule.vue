@@ -1,4 +1,8 @@
-<script>
+<script setup>
+
+    import day1 from '../assets/images/day1.svg'
+    import day2 from '../assets/images/day2.svg'
+    import day3 from '../assets/images/day3.svg'
 
 </script>
 
@@ -6,9 +10,9 @@
     <div class="container">
         <h1>SCHEDULE</h1>
         <div class="schedule_wrapper">
-            <img src="../assets/images/schedule.svg" alt="">
-            <img src="../assets/images/schedule.svg" alt="">
-            <img src="../assets/images/schedule.svg" alt="">
+            <img :src="day1" alt="">
+            <img :src="day2" alt="">
+            <img :src="day3" alt="">
         </div>
     </div>
 </template>

@@ -1,18 +1,17 @@
 <template>
     <div class="container">
-        <h1>SPEAKERS</h1>
-        <div class="speaker_section">
-            <Card v-for="speaker in speakerdata" :image="speaker.image" :name="speaker.name" :position="speaker.position" />
-        </div>
+      <h1>SPEAKERS</h1>
+      <div class="speaker_section">
+        <Card v-for="speaker in speakerdata" :key="speaker.name" :image="`../images/${speaker.image}`" :name="speaker.name" :position="speaker.position" />
+      </div>
     </div>
-</template>
-
-<script setup>
-import Card from './Card.vue';
-import speakerdata from '../assets/data/speakers.json'
-
-</script>
-
+  </template>
+  
+  <script setup>
+  import Card from './Card.vue';
+  import speakerdata from '../assets/data/speakers.json'
+  </script>
+  
 
 <style scoped>
 .container {
@@ -39,9 +38,10 @@ import speakerdata from '../assets/data/speakers.json'
 }
 
 @media(max-width:430px) {
-    .container{
+    .container {
         padding: 0 5%;
     }
+
     .container>h1 {
         font-size: 40px;
         letter-spacing: 0.01em;

@@ -155,7 +155,7 @@ import logo from "../assets/images/logo.png"
 }
 
 nav {
-    background-color: #02071a;
+    background-color:  #191B25;
     width: 100%;
     height: 80px;
     display: flex;

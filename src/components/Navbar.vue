@@ -37,7 +37,7 @@ let menuOpen = ref(false)
 }
 
 nav {
-    background-color: #191C29;
+    background-color: hsla(0, 0%, 16%, 0.4);
 
     width: 100%;
     height: 80px;

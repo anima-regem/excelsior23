@@ -1,22 +1,22 @@
 [
   {
-    "image": "../assets/images/spkr1.jpg",
+    "image": "spkr1.jpg",
     "name": "Rajath KS",
-    "position": "Trainer, Developer & Co-founder, Epoq Zero LLP"
+    "position": "Trainer, Developer & Co-founder, Epoq Zero LLP"
   },
   {
-    "image": "../assets/images/spkr1.png",
+    "image": "spkr2.jpg",
     "name": "Hemang Mohan",
-    "position": "Power Platforms Developer TechMahindra"
+    "position": "Power Platforms Developer, TechMahindra"
   },
   {
-    "image": "../assets/images/spkr1.png",
-    "name": "Dr.Mini Ulanat",
-    "position": "Chair IEEE Kerala Section"
+    "image": "spkr3.jpeg",
+    "name": "Dr. Mini Ulanat",
+    "position": "Chair, IEEE Kerala Section"
   },
   {
-    "image": "../assets/images/spkr1.png",
-    "name": "Dr.Mini Ulanat",
-    "position": "Chair IEEE Kerala Section"
+    "image": "spkr4.jpeg",
+    "name": "John Doe",
+    "position": "Director, Acme Corporation"
   }
 ]
