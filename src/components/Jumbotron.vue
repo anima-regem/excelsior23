@@ -155,7 +155,7 @@ import logo from "../assets/images/logo.png"
 }
 
 nav {
-    background-color:  #191B25;
+    background-color: #191B25;
     width: 100%;
     height: 80px;
     display: flex;
@@ -230,7 +230,7 @@ nav ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #2c3e50;
+        background-color: #000000;
         top: 80px;
         left: -100%;
         text-align: center;

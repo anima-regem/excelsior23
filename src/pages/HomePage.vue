@@ -11,7 +11,7 @@ import Schedule from '../components/Schedule.vue'
 <template>
     <Jumbotron />
     <LogoBanner />
-    <!-- <About /> -->
+    <About />
     <Speakers/>
     <Schedule/>
     <FAQ />
