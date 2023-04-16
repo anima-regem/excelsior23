@@ -7,9 +7,7 @@
 
 <template>
     <main>
-        <div class="left">
-            <div class="excelsior_name">EXCELSIOR'23</div>
-        </div>
+        <h2 class="excelsior_name">EXCELSIOR'23</h2>
 
         <div class="right">
 
@@ -29,27 +27,26 @@
 </template>
 
 <style scoped>
-main{
+main {
     position: relative;
     /* height: 100vh; */
     display: flex;
 }
 
-.left{
+.left {
     height: fit-content;
     width: fit-content;
 }
 
 
 
-.excelsior_name{
+.excelsior_name {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     font-weight: 700;
     font-size: 5rem;
     padding: 3%;
 
-    
-}
 
+}
 </style>

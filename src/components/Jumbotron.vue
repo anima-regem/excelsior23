@@ -6,18 +6,6 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
 </script>
 
 <template>
-    <nav>
-        <input type="checkbox" name="" id="check" />
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <img src="../assets/logo.svg" alt="">
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
     <section class="jumbatron">
         <img class="logo" :src="logo" alt="logo">
         <div class="content">
@@ -37,6 +25,8 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
 
 <style>
 .jumbatron {
+    --font-large: clamp(0.8rem, 4vw, 3rem);
+    --font-btn: clamp(0.7rem, 2vw, 2rem);
     position: relative;
     background-image: url("/background_spotted.png");
     background-size: contain;
@@ -98,14 +88,15 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
     background-image: linear-gradient(98.55deg, var(--left-clr) 0.36%, var(--middle-clr) 52.55%, var(--right-clr) 99.96%);
     ;
     width: fit-content;
-    padding: 1em 2em;
+    padding: 0.75em 1.75em;
     margin-top: 0.5rem;
     border-radius: 2em;
     font-weight: 500;
+    font-size: var(--font-btn);
     transition: --right-clr 150ms,
         --middle-clr 300ms 150ms,
         --left-clr 300ms 150ms,
-        transform 200ms ease-in-out;
+        transform 500ms ease-in-out;
 }
 
 
@@ -142,10 +133,11 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
 .date {
     display: grid;
     place-content: center;
+    padding-left: 2rem;
 }
 
 .date h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-large);
     font-weight: 600;
     margin: 0;
 }
@@ -161,9 +153,7 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
         padding-bottom: 2.5rem;
     }
 
-    .date h2 {
-        font-size: 2rem;
-    }
+
 
     .facemask img {
         transform: translateX(-10%);
@@ -178,9 +168,6 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
     }
 
 
-    .date h2 {
-        font-size: 1.5rem;
-    }
 
     .facemask img {
         transform: translateX(-5%);
@@ -199,10 +186,6 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
         grid-column: 1/3;
     }
 
-    .date h2 {
-        font-size: 1.25rem;
-    }
-
     .facemask img {
         width: 150%;
         transform: translateX(-30%);
@@ -219,115 +202,6 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
     .content {
         padding-top: 1.5rem;
         padding-bottom: 2rem;
-    }
-}
-
-
-
-/* navbar */
-
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-}
-
-nav {
-    background-color:  #191B25;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: -4;
-}
-
-label.logo {
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    font-weight: bold;
-    padding-left: 100px;
-}
-
-nav ul {
-    /* float: right;
-    margin-right: 20px; */
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin-left: 5px;
-}
-
-
-nav ul li a {
-    color: white;
-    font-size: 17px;
-    text-transform: uppercase;
-    padding: 7px 13px;
-    border-radius: 3px;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-}
-
-#check {
-    display: none;
-}
-
-@media (max-width: 952px) {
-    label.logo {
-        font-size: 30px;
-        padding-left: 50px;
-    }
-
-    nav ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 715px) {
-    .checkbtn {
-        display: block;
-    }
-
-    img {
-        width: 50vw;
-    }
-
-    ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all 0.5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    #check:checked~ul {
-        left: 0;
     }
 }
 </style>
