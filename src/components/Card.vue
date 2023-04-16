@@ -43,7 +43,8 @@ export default {
 .details {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
 }
 
@@ -69,6 +70,7 @@ export default {
     font-size: 18.9247px;
     line-height: 23px;
     color: #FFFFFF;
+    padding: 0px 8%;
 }
 
 @media(max-width:430px) {
