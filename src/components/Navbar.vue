@@ -103,7 +103,7 @@ nav ul li a {
         width: 100%;
         height: 100vh;
         z-index: 100;
-        background-color: hsla(210, 29%, 24%, 50%);
+        background-color: hsla(210, 30%, 24%, 0.756);
         top: 80px;
         left: -100%;
         text-align: center;

@@ -24,7 +24,7 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 <style scoped>
 
 .logo-container {
-    background-color: hsla(0, 0%, 16%, 1);
+    background-color: hsla(0, 0%, 100%, 24%);
     padding: 1rem 0;
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
@@ -48,11 +48,12 @@ import comsocLogo from '../assets/images/comsocLogo.png';
 .logos img {
     width: 9%;
     min-width: 60px;
+    vertical-align: middle;
 }
 
 .logos img[alt="WIELogo"] {
-    min-width: 40px;
-    width: 8%;
+    min-width: 36px;
+    width: 6%;
 }
 
 .logos img[alt="IEEELogo"] {

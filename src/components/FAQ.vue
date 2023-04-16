@@ -55,7 +55,7 @@
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    font-size: 70px;
+    font-size: 70.3536px;
     text-align: left;
 }
 
@@ -137,8 +137,11 @@
         position: absolute;
         margin: 1.8rem 0.5rem 0 0.8rem;
         color: white;
-        font-size: 5vw;
+        font-size: 40px;
+        letter-spacing: 0.01em;
         font-family: 'Poppins', sans-serif;
+        text-shadow: 5.47692px 4.38154px 5.47692px rgba(0, 0, 0, 0.25);
+
 
         text-align: left;
     }

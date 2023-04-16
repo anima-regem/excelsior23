@@ -11,14 +11,14 @@
 
         <div class="more_info">
             <p>
-                Excelsior 2022 is the fourth iteration of the flagship event of IEEE SB GEC Palakkad. It is conducted at
+                Excelsior 2023 is the fifth iteration of the flagship event of IEEE SB GEC Palakkad. It is conducted at
                 Government Engineering College Sreekrishnapuram, Palakkad, and lasts for about 3 days. The participation of
-                active and enthusiast engineering students all over Kerala marks the major attraction of the occasion.
-            </p>
+                active and enthusiast engineering students all over Kerala marks the major attraction of the occasion. </p>
             <p>
 
-                The tech fest comprises the coalesce of different technological workshops and interactive disquisitions by
-                proficient personalities according to each student's passion in their respective fields.Excelsior’22 offers
+                The
+                tech fest comprises the coalesce of different technological workshops and interactive disquisitions by
+                proficient personalities according to each student’s passion in their respective fields. Excelsior’23 offers
                 a platform for learning and augmenting technical virtuosity, and knowledge, without bound and in annex lots
                 of fun and entertainment ingredients to boost up the spirit of vibrant technophiles.
             </p>
@@ -29,8 +29,8 @@
 
 <style scoped>
 section {
-    --font-large: 7vw;
-    --font-medium: 2vw;
+    --font-large: 6vw;
+    --font-medium: 1vw;
     --font-large: clamp(0.8rem, 7vw, 5rem);
     --font-medium: clamp(0.7rem, 2vw, 2rem);
     position: relative;

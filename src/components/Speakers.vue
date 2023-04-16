@@ -27,6 +27,7 @@
     letter-spacing: 0.01em;
     color: #FFFFFF;
     text-shadow: 5.47692px 4.38154px 5.47692px rgba(0, 0, 0, 0.25);
+    margin: 1.8rem 0.5rem 0 0.8rem;
 }
 
 .speaker_section {

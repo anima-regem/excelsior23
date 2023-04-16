@@ -13,7 +13,7 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
                 <img :src="jumbatronHeader" alt="" class="title">
                 <img :src="excelsiorLogo" alt="" class="content-logo">
                 <h2>28<span class="thin">|</span>29<span class="thin">|</span>30 APRIL 2023</h2>
-                <a href="/" class="reg-btn">Register</a>
+                <a href="https://www.yepdesk.com/excelsior-2023" class="reg-btn">Register</a>
             </div>
             <div class="facemask">
                 <img :src="facemask" alt="mask">
