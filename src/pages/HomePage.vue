@@ -13,7 +13,7 @@ import Navbar from "../components/Navbar.vue";
     <Navbar />
     <Jumbotron />
     <LogoBanner />
-    <!-- <About /> -->
+    <About />
     <Speakers />
     <Schedule />
     <FAQ />
