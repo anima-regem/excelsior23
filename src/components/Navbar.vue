@@ -1,6 +1,11 @@
 <script setup>
 import { ref } from 'vue';
 let menuOpen = ref(false)
+
+function close() {
+    document.getElementById('check').checked = false;
+}
+
 </script>
 
 
@@ -13,9 +18,9 @@ let menuOpen = ref(false)
         </label>
         <img src="../assets/logo.svg" alt="">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#footer">Contact</a></li>
+            <li><a href="#about" @click="close">About</a></li>
+            <li><a href="#speakers" @click="close">Speakers</a></li>
+            <li><a href="#footer" @click="close">Contact</a></li>
         </ul>
     </nav>
 </template>
@@ -107,7 +112,7 @@ nav ul li a {
         top: 80px;
         left: -100%;
         text-align: center;
-        transition: all 0.5s;
+        transition: all 0.1s;
     }
 
     nav ul li {
