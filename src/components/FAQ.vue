@@ -168,8 +168,8 @@
 
     .faqHead {
         color: #fff;
-        font-family: 'Poppins', sans-serif;
-        font-size: 3vw;
+        font-family: 'Montserrat';
+        font-size: 4vw;
         height: auto;
         font-weight: 600;
         line-height: 34px;
