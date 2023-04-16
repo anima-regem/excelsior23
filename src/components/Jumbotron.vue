@@ -1,6 +1,8 @@
 <script setup>
 import facemask from "../assets/images/facemask.png"
 import logo from "../assets/images/logo.png"
+import jumbatronHeader from '../assets/logo.svg'
+import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
 </script>
 
 <template>
@@ -20,7 +22,10 @@ import logo from "../assets/images/logo.png"
         <img class="logo" :src="logo" alt="logo">
         <div class="content">
             <div class="date">
-                <h2>28, 29, 30 April</h2>
+                <img :src="jumbatronHeader" alt="" class="title">
+                <img :src="excelsiorLogo" alt="" class="content-logo">
+                <h2>28<span class="thin">|</span>29<span class="thin">|</span>30 APRIL 2023</h2>
+                <a href="/" class="reg-btn">Register</a>
             </div>
             <div class="facemask">
                 <img :src="facemask" alt="mask">
@@ -38,6 +43,77 @@ import logo from "../assets/images/logo.png"
     overflow: hidden;
 }
 
+.thin {
+    font-weight: 100;
+    color: hsl(0, 0%, 50%);
+}
+
+.title {
+    width: 40%;
+}
+
+@supports (background: paint(something)) {
+    @property --left-clr {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #55D5D7;
+    }
+
+    @property --middle-clr {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #007A68;
+    }
+
+    @property --right-clr {
+        syntax: '<color>';
+        inherits: true;
+        initial-value: #022BA1;
+    }
+
+    .reg-btn:hover,
+    .reg-btn:focus-visible {
+        --left-clr: #022BA1;
+        --middle-clr: #022BA1;
+        --right-clr: #022BA1;
+    }
+
+
+}
+
+@supports not (background: paint(something)) {
+
+    .reg-btn:hover,
+    .reg-btn:focus-visible {
+        transform: translateY(-3px);
+    }
+}
+
+.reg-btn {
+    --left-clr: #55D5D7;
+    --middle-clr: #007A68;
+    --right-clr: #022BA1;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(98.55deg, var(--left-clr) 0.36%, var(--middle-clr) 52.55%, var(--right-clr) 99.96%);
+    ;
+    width: fit-content;
+    padding: 1em 2em;
+    margin-top: 0.5rem;
+    border-radius: 2em;
+    font-weight: 500;
+    transition: --right-clr 150ms,
+        --middle-clr 300ms 150ms,
+        --left-clr 300ms 150ms,
+        transform 200ms ease-in-out;
+}
+
+
+
+.content-logo {
+    width: 60%;
+}
+
 .jumbatron::after {
     content: "";
     position: absolute;
@@ -45,7 +121,8 @@ import logo from "../assets/images/logo.png"
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: hsla(0, 0%, 16%, 0.4);
+    z-index: -10;
+    /* background-color: hsla(0, 0%, 16%, 0.4); */
 }
 
 .logo {
@@ -69,6 +146,8 @@ import logo from "../assets/images/logo.png"
 
 .date h2 {
     font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0;
 }
 
 .facemask img {
