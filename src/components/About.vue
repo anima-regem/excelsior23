@@ -29,6 +29,8 @@
 
 <style scoped>
 section {
+    --font-large: 7vw;
+    --font-medium: 2vw;
     --font-large: clamp(0.8rem, 7vw, 5rem);
     --font-medium: clamp(0.7rem, 2vw, 2rem);
     position: relative;
@@ -60,7 +62,7 @@ section {
 }
 
 .more_info>p:first-child {
-    margin: 2rem 0;
+    margin: 1.75rem 0;
 }
 
 .tagline {

@@ -25,6 +25,8 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
 
 <style>
 .jumbatron {
+    --font-large: 4vw;
+    --font-btn: 2vw;
     --font-large: clamp(0.8rem, 4vw, 3rem);
     --font-btn: clamp(0.7rem, 2vw, 2rem);
     position: relative;
