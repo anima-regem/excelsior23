@@ -6,7 +6,7 @@
 
 
 <template>
-    <section>
+    <section id="about">
         <h2 class="excelsior_name">EXCELSIOR'23</h2>
 
         <div class="more_info">

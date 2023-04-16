@@ -30,9 +30,20 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
     --font-large: clamp(0.8rem, 4vw, 3rem);
     --font-btn: clamp(0.7rem, 2vw, 2rem);
     position: relative;
-    background-image: url("/background_spotted.png");
+    
+    background-image: url("/bg.svg");
     background-size: contain;
     overflow: hidden;
+}
+.jumbatron::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background-color: hsla(0, 0%, 16%, 0.4) !important;
 }
 
 .thin {

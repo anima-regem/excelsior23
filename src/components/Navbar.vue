@@ -13,9 +13,9 @@ let menuOpen = ref(false)
         </label>
         <img src="../assets/logo.svg" alt="">
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
     </nav>
 </template>
@@ -30,7 +30,7 @@ let menuOpen = ref(false)
 }
 
 nav {
-    background-color: #191B25;
+    background-color: #151B30;
     width: 100%;
     height: 80px;
     display: flex;

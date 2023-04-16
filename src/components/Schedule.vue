@@ -41,6 +41,10 @@
     justify-content: space-evenly;
     gap: 50px;
 }
+img{
+    max-width: 70vw;
+    max-height: auto;
+}
 
 @media(max-width:430px) {
     .container>h1 {
