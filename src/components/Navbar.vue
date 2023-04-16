@@ -6,18 +6,17 @@ let menuOpen = ref(false)
 
 <template>
     <div :style="menuOpen ? 'display: block;' : ''" class="margin"></div>
-    <nav :style="menuOpen ? 'position: fixed;top: 0;' : ''">
-        <input v-model="menuOpen" type="checkbox" name="" id="check" />
+    <nav>
+        <input type="checkbox" name="" id="check" />
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
         <img src="../assets/logo.svg" alt="">
         <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#footer">Contact</a></li>
         </ul>
-
     </nav>
 </template>
 
@@ -30,21 +29,14 @@ let menuOpen = ref(false)
     list-style: none;
 }
 
-.margin {
-    height: 80px;
-    width: 100%;
-    display: none;
-}
-
 nav {
-    background-color: hsla(0, 0%, 16%, 0.4);
-
+    background-color: #151B30;
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 10;
+    z-index: -4;
 }
 
 label.logo {
@@ -55,18 +47,16 @@ label.logo {
     padding-left: 100px;
 }
 
-ul {
-    float: right;
-    margin-right: 20px;
-}
 
-ul li {
+
+nav ul li {
     display: inline-block;
     line-height: 80px;
     margin-left: 5px;
 }
 
-ul li a {
+
+nav ul li a {
     color: white;
     font-size: 17px;
     text-transform: uppercase;
@@ -89,12 +79,12 @@ ul li a {
 }
 
 @media (max-width: 952px) {
-    .logo {
+    label.logo {
         font-size: 30px;
         padding-left: 50px;
     }
 
-    ul li a {
+    nav ul li a {
         font-size: 16px;
     }
 }
@@ -112,26 +102,26 @@ ul li a {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: #303545;
+        z-index: 100;
+        background-color: hsla(210, 29%, 24%, 50%);
         top: 80px;
         left: -100%;
-        z-index: 100;
         text-align: center;
         transition: all 0.5s;
     }
 
-    .active {
-        left: 0;
-    }
-
-    ul li {
+    nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     }
 
-    ul li a {
+    nav ul li a {
         font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
     }
 }
 </style>
