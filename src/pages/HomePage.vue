@@ -14,6 +14,7 @@ import Navbar from "../components/Navbar.vue";
     <Jumbotron />
     <LogoBanner />
     <About />
+
     <Speakers />
     <Schedule />
     <FAQ />
