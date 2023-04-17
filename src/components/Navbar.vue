@@ -1,10 +1,24 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 let menuOpen = ref(false)
 
 function close() {
     document.getElementById('check').checked = false;
+    document.querySelector('nav').style.position = 'static';
+
+
 }
+
+onMounted(() => {
+    document.getElementById('check').addEventListener('click', () => {
+        if(document.getElementById('check').checked) {
+            document.querySelector('nav').style.position = 'fixed';
+        } else {
+            document.querySelector('nav').style.position = 'static';            
+        }
+})
+
+})
 
 </script>
 
@@ -102,6 +116,9 @@ nav ul li a {
     img {
         width: 50vw;
     }
+    nav{
+        z-index: 10;
+    }
 
     ul {
         position: fixed;
@@ -113,6 +130,9 @@ nav ul li a {
         left: -100%;
         text-align: center;
         transition: all 0.1s;
+        -webkit-backdrop-filter: blur(5px);
+        /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+        backdrop-filter: blur(5px);
     }
 
     nav ul li {
