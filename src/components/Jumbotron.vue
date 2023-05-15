@@ -12,7 +12,7 @@ import excelsiorLogo from '../assets/images/ExcelsiorLogoLinear.svg'
             <div class="date">
                 <img :src="jumbatronHeader" alt="" class="title">
                 <img :src="excelsiorLogo" alt="" class="content-logo">
-                <h2>2<span class="thin">|</span>3<span class="thin">|</span>4 June 2023</h2>
+                <h2>02<span class="thin">|</span>03<span class="thin">|</span>04 June 2023</h2>
                 <!-- <h2>
                     Coming Soon
                 </h2> -->
